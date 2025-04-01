@@ -39,6 +39,7 @@ public class UpdateMarksServlet extends HttpServlet {
 					sb.getMk().setDb(Integer.parseInt(req.getParameter("db")));
 					sb.getMk().setTools(Integer.parseInt(req.getParameter("tools")));
 					
+					
 					int k = new UpdateMarksDAO().update(sb);
 					if(k>0) {
 						
