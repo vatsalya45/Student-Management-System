@@ -8,7 +8,26 @@ body {
     justify-content: space-between;
     height: 96vh;
 }
-main{
+
+header{
+    height: 80px;
+    border: solid 1px purple;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    font-size:larger;
+    background:linear-gradient(to right, rgb(172, 90, 172),rgb(132, 231, 231) );
+}
+
+footer {
+    height: 60px;
+    border: solid 1px purple;
+    justify-content: center;
+    text-align: center;
+    background:linear-gradient(to right, rgb(172, 90, 172),rgb(132, 231, 231) );
+}
+
+main {
     display: flex; /* Enables flexbox layout */
     justify-content: space-around; /* Align divs side by side */
     justify-content: space-evenly;
@@ -26,36 +45,10 @@ div{
     align-items: center; /* Aligns vertically */
     height: 450px; /* Sets height of the div */
 }
-img{
-    max-width: 300px; /* Sets maximum width for the image */
-    height: 290px;
-    border-radius: 5%;
-}
-img:hover{
-    transform:scale(1.1);
-}
-p{
-    text-align: center;
-    background-color: rgb(132, 179, 223);
-    border: solid 1px lightseagreen;
-    height: 40px;
-    text-align: center;
-    padding-top: 5%;
-    font-size: large;
-}
-header{
-    height: 100px;
-    border: solid 1px purple;
-    justify-content: center;
-    text-align: center;
-    background:linear-gradient(to right, rgb(172, 90, 172),rgb(132, 231, 231) );
-}
-
-#footer {
-    height: 60px;
-    border: solid 1px purple;
-    justify-content: center;
-    text-align: center;
-    background:linear-gradient(to right, rgb(172, 90, 172),rgb(132, 231, 231) );
+a{
+	display: grid;	
+	justify-content: center; /* Aligns horizontally */
+    align-items: center; /* Aligns vertically */
+    text-decoration: none;
 }
 

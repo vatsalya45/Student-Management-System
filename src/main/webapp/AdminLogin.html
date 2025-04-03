@@ -2,13 +2,30 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Admin login page</title>
+<link rel="stylesheet" type="text/css" href="AdminLogin.css">
 </head>
 <body>
-	<form action="admin" method="post">
-		UserName:<input type="text" name="uname"><br>
-		Password:<input type="password" name="pword"><br>
-		<input type="submit" value="AdminLogin">
-	</form>
+	<header>
+		<h1>Login page for Admin</h1>
+	</header>
+	<main>
+		<form action="admin" method="post">
+			<fieldset class="legend">
+        		<legend>
+            		Admin Login
+        		</legend>
+        		<ul style="list-style-type: none; padding: 0;">
+					<li>UserName:<input type="text" name="uname"></li>
+					<li>Password:<input type="password" name="pword"></li>
+				</ul>	
+				<input type="submit" value="AdminLogin">
+			</fieldset>
+		</form>
+	</main>
+	<footer id="footer">
+		<h5>This login page is belong to the admins of the Student 
+		Management System which are made by off line registration process</h5>
+	</footer>
 </body>
 </html>

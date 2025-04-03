@@ -6,16 +6,32 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Welcome Admin</title>
+<link rel = "stylesheet" type = "text/css" href = "WelcomeAdmin.css">
 </head>
 <body>
-<%
-	AdminBean ab = (AdminBean)session.getAttribute("abean");
-	out.println("Welcone Admin :"+ab.getfName()+"<br>");
-	
-%>
-<a href ="Student.html">AddStudent</a>
-<a href ="view">ViewAllStudents</a>
-<a href ="logout">Logout</a>
+	<header>
+		<%
+			AdminBean ab = (AdminBean)session.getAttribute("abean");
+			out.println("Welcone Admin :"+ab.getfName()+"<br>");
+		%>
+	</header>
+	<main>
+		<div>
+			<img alt="Add Student image" src="Images/AddStudent.png">
+			<a href ="Student.html"><button>Add Student</button></a>
+		</div>
+		<div>
+			<img class = "ViewStudent" alt="View Student image" src="Images/ViewStudent.jpg">
+			<a href ="view"><button>ViewAllStudents</button></a>
+		</div>
+		<div>
+			<img alt="Add Student image" src="Images/Logout.png">
+			<a href ="logout"><button>Logout</button></a>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2025 JSP Example Inc.</p>
+	</footer>
 </body>
 </html>
